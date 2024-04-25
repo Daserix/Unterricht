@@ -25,7 +25,7 @@ public class Search {
 
     static int binarySearch(int[] numberList, int searchFor) {
         int u = 0;
-        int o = numberList.length;
+        int o = numberList.length-1;
         while (u <= o) {
             int m = (u+o)/2;
             if (numberList[m] == searchFor) return m;
